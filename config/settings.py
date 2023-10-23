@@ -28,6 +28,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# app 단위로 관리 => 마이그레이션 할 때 필요하므로 여기에 추가하기
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,7 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework'
+    'rest_framework',
+    'content',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -99,9 +102,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ko-kr'  # 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'  # 'UTC'
 
 USE_I18N = True
 
