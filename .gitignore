@@ -407,3 +407,4 @@ pip-selfcheck.json
 
 # jihye custom
 .idea/
+migrations/
